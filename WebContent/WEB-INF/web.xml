@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>kalkidan_teklu_invest_1</display-name>
+  <welcome-file-list>
+    <welcome-file>stocks.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>processstockpurchase</servlet-name>
+    <servlet-class>com.homework3.servlet.ProcessPurchase</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>processstockpurchase</servlet-name>
+    <url-pattern>/processstockpurchase/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>purchasedStockList</servlet-name>
+    <servlet-class>com.homework3.servlet.PurchasedStockList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>purchasedStockList</servlet-name>
+    <url-pattern>/purchasedStockList/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>error</servlet-name>
+    <servlet-class>com.homework3.servlet.Error</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>error</servlet-name>
+    <url-pattern>/error/*</url-pattern>
+  </servlet-mapping>
+</web-app>
